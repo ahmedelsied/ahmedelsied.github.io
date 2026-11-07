@@ -35,9 +35,9 @@ jobs:
       - name: Generate static site
         run: pnpm exec nuxt build --preset github_pages
         env:
-          # Project site: https://ahmedelsied.github.io/ahmedelsayed.github.io/
-          NUXT_APP_BASE_URL: /${{ github.event.repository.name }}/
-          NUXT_PUBLIC_SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+          # User site. The repository must be named ahmedelsied.github.io.
+          NUXT_APP_BASE_URL: /
+          NUXT_PUBLIC_SITE_URL: https://ahmedelsied.github.io
 
       - uses: actions/upload-pages-artifact@v3
         with:

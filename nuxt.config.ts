@@ -7,7 +7,7 @@ import { planTopics as plan2Topics } from './features/plan2/topics';
 import { phases as plan3Phases } from './features/plan3/phases';
 import { planTopics as plan3Topics } from './features/plan3/topics';
 
-const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://ahmedelsayed.github.io';
+const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://ahmedelsied.github.io';
 const baseURL = (process.env.NUXT_APP_BASE_URL || '/').replace(/\/?$/, '/');
 const publicFile = (file: string) => `${baseURL}${file.replace(/^\//, '')}`;
 const siteName = 'Ahmed Elsayed';
