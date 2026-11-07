@@ -36,9 +36,8 @@
   "home": {
     "eyebrow": "Hello, I am Ahmed",
     "title": "Senior Backend Engineer.",
-    "subtitle": "I design scalable, secure backends with Laravel and NestJS. Seven years of experience across e-commerce, admin platforms, and APIs.",
+    "subtitle": "I design scalable, secure backends with Laravel and NestJS. Seven years of production work on systems designed to remain maintainable.",
     "location": "Mansoura, Egypt",
-    "relocate": "Open to relocation to the UAE and Saudi Arabia",
     "award": "Apps Up 2022, Huawei",
     "see_work": "See my work",
     "selected_work": "Selected work",
@@ -61,7 +60,7 @@
     },
     "about": {
       "title": "About",
-      "body": "Senior Backend Engineer. Seven years designing systems in PHP, Laravel, and NestJS, with the weight on architecture: domain boundaries, data models, and APIs.",
+      "body": "Senior Backend Engineer. Seven years designing systems in PHP, Laravel, and NestJS, with the emphasis on architecture that holds up as the product grows.",
       "more": "Read the long version"
     },
     "work": {
@@ -80,12 +79,12 @@
       "general": {
         "label": "General",
         "questions": [
-          "Where are you based, and are you open to relocation?",
+          "Where are you based?",
           "What is your primary stack?",
           "Do you take on freelance or contract work?"
         ],
         "answers": [
-          "I am based in Mansoura, Egypt, and open to relocating to the UAE or Saudi Arabia.",
+          "I am based in Mansoura, Egypt.",
           "PHP and Laravel first, with MySQL and PostgreSQL. I also work in NestJS and Node.js, and I am comfortable with JavaScript.",
           "Yes. I spent two years freelance before moving into full-time roles, and I still take the right engagement. Reach out via the contact page."
         ]
@@ -100,7 +99,7 @@
         "answers": [
           "Product, frontend, and DevOps in the same sprint. I have worked that way at Robusta, and I led the backend team at Almasa.",
           "Start with the schema and the query. Then indexes, caching, and the API shape the client actually needs. I would rather fix the data path than hide a slow query behind a spinner.",
-          "Both. I currently ship as a backend developer at Robusta, and I have led a backend team and mentored juniors. I still write the code."
+          "Both. I currently work as a Software Engineer at Robusta, and I have led a backend team and mentored juniors. I still write the code."
         ]
       },
       "process": {
@@ -120,7 +119,6 @@
   },
   "hero": {
     "status": {
-      "available": "Available for new roles",
       "busy": "Currently booked"
     }
   },
@@ -183,18 +181,16 @@
   "about": {
     "eyebrow": "About",
     "title": "Senior Backend Engineer.",
-    "subtitle": "Seven years designing backends in PHP, Laravel, and NestJS. The part I care about is the shape of the system: boundaries, data, and APIs that stay clear as the product grows.",
+    "subtitle": "Seven years designing and delivering systems. The emphasis is a structure that holds up as the product grows.",
     "intro": [
-      "I am Ahmed. For seven years I have designed backend systems in PHP, Laravel, and NestJS. I care less about a feature landing than about whether the system can still be understood after it does. That means domain boundaries, a data model that matches the business, and an API that other teams can depend on.",
-      "At Almasa I led the backend of an internal e-commerce platform and put a domain-oriented architecture in place, so real-time chat, notifications, and SadadPay could grow as separate parts instead of one tangled module. At Codebase-tech the same question came up across several Laravel and MySQL systems: where the boundary sits, how the schema should change, and which integration belongs behind an interface.",
-      "At Robusta Technology Group I design Laravel applications the same way. Schemas come before screens. Permissions, payments, and third-party APIs are part of the design, not a patch at the end. When a service needs a stricter module boundary, NestJS is the other tool I use.",
-      "I review the design in code review, not only the diff. In 2022 the Us and Them app won Best Arabic App and Best Social Impact at Huawei Apps Up. I am based in Mansoura, available for new roles, and open to relocating to the UAE or Saudi Arabia."
+      "I am Ahmed. For seven years I have designed and delivered systems that other people keep running. I set the structure early, so the product can grow without the next change having to undo the last one.",
+      "That experience covers the whole system: how the parts fit, how the information is organized, and how the result stays maintainable once it is in use. I have led that work, and I have done it directly.",
+      "Communication is part of the same job. I explain the tradeoff in plain terms, agree the plan with the team, and keep the people who depend on the system clear about scope, progress, and risk. In code review I address the design as well as the change, and I write feedback that is specific, respectful, and clear about what to revise and why.",
+      "I hold the work to that standard. A system should remain sound after delivery, with a structure clear enough for the next change to follow. The people responsible for it should know the scope, the progress, and the risk, and they should be able to continue without reconstructing decisions that were already made."
     ],
     "currently": "Currently",
     "currently_items": [
-      "Backend developer at Robusta Technology Group, shipping Laravel applications.",
-      "Available for new roles.",
-      "Open to relocating to the UAE or Saudi Arabia."
+      "Software Engineer at Robusta Technology Group."
     ],
     "experience": "Experience",
     "skills": "Technical skills",
@@ -203,6 +199,7 @@
       "backend": "Backend and APIs",
       "databases": "Databases and Storage",
       "state": "Architecture",
+      "design": "Software design",
       "realtime": "Systems and scale",
       "devops": "Build and DevOps",
       "quality": "Quality and Collaboration"
@@ -218,7 +215,7 @@
   "projects": {
     "eyebrow": "Projects",
     "title": "A catalog of products I have worked on.",
-    "subtitle": "Selected products from client and product work.",
+    "subtitle": "Selected systems I have designed and delivered.",
     "product_work": "Product work",
     "product_work_blurb": "Products I have built or shipped major features for.",
     "open_source": "Open source",
@@ -292,7 +289,7 @@
     "primary_hint": "I usually reply within a day.",
     "secondary_label": "Or, elsewhere online",
     "availability_label": "Availability",
-    "availability_value": "Based in Mansoura. Open to the UAE and Saudi Arabia. UTC+2"
+    "availability_value": "Based in Mansoura. UTC+2"
   },
   "error": {
     "label": "Error {code}",

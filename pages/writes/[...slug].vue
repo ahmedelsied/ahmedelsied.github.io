@@ -41,21 +41,9 @@ const slug = computed(() => {
   return path.replace(/^\/writes(-ar)?\//, '').replace(/\/$/, '');
 });
 
-// Walk the content AST and count words for a reading-time estimate.
-// Server-rendered, so the number is in the HTML on first paint.
-type AstNode = { type?: string; value?: string; children?: AstNode[] };
-function collectText(node: AstNode | undefined): string {
-  if (!node) return '';
-  if (node.type === 'text' && typeof node.value === 'string') return node.value;
-  if (node.children?.length) return node.children.map(collectText).join(' ');
-  return '';
-}
-const readingTime = computed(() => {
-  const body = post.value?.body as unknown as AstNode | undefined;
-  const text = collectText(body);
-  const words = text.split(/\s+/).filter(Boolean).length;
-  return Math.max(1, Math.round(words / 220));
-});
+const readingTime = computed(() =>
+  readingMinutes(post.value?.body, post.value?.readingMinutes),
+);
 
 // Related posts — grab everything then filter out the current one; take 2
 // newest. Cached by `related-<slug>` so navigating between posts reuses it.

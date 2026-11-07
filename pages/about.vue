@@ -54,12 +54,17 @@ const stack: StackGroup[] = [
   {
     title: 'about.stack.state',
     items: [
-      'SOLID',
-      'Domain-driven design',
-      'Design patterns',
+      'Layered architecture',
+      'Modular monolith',
+      'Hexagonal architecture',
+      'Onion architecture',
+      'Clean architecture',
       'Microservices',
-      'Event-driven architecture',
     ],
+  },
+  {
+    title: 'about.stack.design',
+    items: ['SOLID', 'Domain-driven design', 'Design patterns', 'Event-driven architecture'],
   },
   {
     title: 'about.stack.realtime',
@@ -74,7 +79,7 @@ const stack: StackGroup[] = [
   },
   {
     title: 'about.stack.devops',
-    items: ['Containerization', 'Laravel Forge', 'Laravel Envoyer'],
+    items: ['Docker', 'Kubernetes', 'Grafana', 'Prometheus'],
   },
   {
     title: 'about.stack.quality',
@@ -135,16 +140,6 @@ const stack: StackGroup[] = [
             <span class="inline-flex items-center gap-1.5">
               <Icon name="lucide:map-pin" class="size-3.5" />
               {{ t('home.location') }}
-            </span>
-            <span aria-hidden="true" class="size-0.5 rounded-full bg-muted-foreground/60" />
-            <span class="inline-flex items-center gap-1.5">
-              <span class="relative inline-flex size-2">
-                <span
-                  class="absolute inline-flex size-full animate-ping rounded-full bg-emerald-500 opacity-60"
-                />
-                <span class="relative inline-flex size-2 rounded-full bg-emerald-500" />
-              </span>
-              {{ t('hero.status.available') }}
             </span>
           </div>
         </div>

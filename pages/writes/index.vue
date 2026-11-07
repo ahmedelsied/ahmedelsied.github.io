@@ -6,7 +6,14 @@ const localePath = useLocalePath();
 const isArabicLocaleInitial = locale.value.toLowerCase().startsWith('ar');
 const initialCollection = isArabicLocaleInitial ? 'writesAr' : 'writes';
 
-type PostRow = { title?: string; description?: string; lang?: string; path?: string };
+type PostRow = {
+  title?: string;
+  description?: string;
+  lang?: string;
+  path?: string;
+  body?: unknown;
+  readingMinutes?: number | null;
+};
 const localizedTitle = (p: PostRow) => p.title || '';
 const localizedDescription = (p: PostRow) => p.description || '';
 const localizedLang = (p: PostRow) => p.lang ?? 'en';
@@ -20,21 +27,14 @@ useSiteSeo({
   description: t('meta.blog.description'),
 });
 
-const { data: posts } = await useAsyncData(`${initialCollection}-list`, () =>
-  queryCollection(initialCollection).order('date', 'DESC').all()
-);
+const { data: posts } = await useAsyncData(`${initialCollection}-list`, async () => {
+  const rows = await queryCollection(initialCollection).order('date', 'DESC').all();
+  if (rows.length > 0 || initialCollection === 'writes') return rows;
+  return queryCollection('writes').order('date', 'DESC').all();
+});
 
-type AstNode = { type?: string; value?: string; children?: AstNode[] };
-function collectText(node: AstNode | undefined): string {
-  if (!node) return '';
-  if (node.type === 'text' && typeof node.value === 'string') return node.value;
-  if (node.children?.length) return node.children.map(collectText).join(' ');
-  return '';
-}
-function readingTime(body: unknown): number {
-  const text = collectText(body as AstNode | undefined);
-  const words = text.split(/\s+/).filter(Boolean).length;
-  return Math.max(1, Math.round(words / 220));
+function readingTime(post: PostRow): number {
+  return readingMinutes(post.body, post.readingMinutes);
 }
 
 // Group posts by publication year (stable Latin-digit key for grouping);
@@ -92,7 +92,7 @@ const yearLabel = (key: string) => (key === UNDATED ? t('blog.undated') : format
                   </time>
                   <span aria-hidden="true" class="size-0.5 rounded-full bg-muted-foreground/60" />
                   <span>
-                    {{ t('blog.min_read', { n: readingTime(post.body) }, readingTime(post.body)) }}
+                    {{ t('blog.min_read', { n: readingTime(post) }, readingTime(post)) }}
                   </span>
                 </div>
 

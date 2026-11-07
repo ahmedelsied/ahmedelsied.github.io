@@ -6,9 +6,11 @@ const { formatDate } = useLocalizedDate();
 const isArabicLocaleInitial = locale.value.toLowerCase().startsWith('ar');
 const initialCollection = isArabicLocaleInitial ? 'writesAr' : 'writes';
 
-const { data: posts } = await useAsyncData(`${initialCollection}-previews`, () =>
-  queryCollection(initialCollection).order('date', 'DESC').limit(3).all()
-);
+const { data: posts } = await useAsyncData(`${initialCollection}-previews`, async () => {
+  const rows = await queryCollection(initialCollection).order('date', 'DESC').limit(3).all();
+  if (rows.length > 0 || initialCollection === 'writes') return rows;
+  return queryCollection('writes').order('date', 'DESC').limit(3).all();
+});
 
 type PostRow = { title?: string; description?: string; lang?: string; path?: string };
 const localizedLang = (p: PostRow) => p.lang ?? 'en';

@@ -35,9 +35,11 @@ export async function useSearchIndex() {
   const isArabicLocaleInitial = locale.value.toLowerCase().startsWith('ar');
   const initialCollection = isArabicLocaleInitial ? 'writesAr' : 'writes';
 
-  const { data: posts } = await useAsyncData(`search-index-${initialCollection}`, () =>
-    queryCollection(initialCollection).order('date', 'DESC').all()
-  );
+  const { data: posts } = await useAsyncData(`search-index-${initialCollection}`, async () => {
+    const rows = await queryCollection(initialCollection).order('date', 'DESC').all();
+    if (rows.length > 0 || initialCollection === 'writes') return rows;
+    return queryCollection('writes').order('date', 'DESC').all();
+  });
 
   const items = computed<SearchItem[]>(() => {
     const list: SearchItem[] = [];

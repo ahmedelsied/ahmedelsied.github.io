@@ -11,6 +11,7 @@ const writesSchema = z.object({
   lang: z.string().optional(),
   keywords: z.array(z.string()).optional(),
   image: z.string().optional(),
+  readingMinutes: z.number().optional(),
 });
 
 export default defineContentConfig({

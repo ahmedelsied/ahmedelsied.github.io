@@ -12,7 +12,7 @@ export const useExperience = () => {
   const roles: Role[] = [
     {
       company: 'Robusta Technology Group',
-      title: 'Backend Developer',
+      title: 'Software Engineer',
       start: '2024-11-01',
       end: null,
       location: 'Remote, Cairo, Egypt',
@@ -23,6 +23,9 @@ export const useExperience = () => {
         'Deploy and troubleshoot with Laravel Forge and Envoyer.',
         'Mentor junior developers on Laravel, Eloquent, and package integration.',
         'Use Cursor and MCP day to day for implementation, unit tests, documentation, and debugging.',
+        'Treat permissions, payments, and third-party APIs as part of the design, not a patch after the feature lands.',
+        'Use NestJS when a service needs a stricter module boundary than the Laravel application should hold.',
+        'Work in the same sprint as product, frontend, and DevOps, and still write the backend.',
       ],
     },
     {
@@ -35,6 +38,9 @@ export const useExperience = () => {
         'Led the backend team on an internal e-commerce dashboard and mobile API, built with Laravel.',
         'Introduced a domain-oriented structure so the system could keep growing without turning into one module.',
         'Shipped API features including real-time chat, a notification system, and SadadPay.',
+        'Reviewed pull requests for the structure, not only the line changes, and coached the team as that structure landed.',
+        'Estimated backend work with the team and cut scope when a feature would not fit the sprint.',
+        'Stayed in the code while leading, including the chat, notification, and SadadPay work.',
       ],
     },
     {
@@ -47,6 +53,9 @@ export const useExperience = () => {
         'Worked across the lifecycle of multiple Laravel and MySQL projects, from architecture through deployment.',
         'Integrated third-party APIs and tuned databases for higher traffic.',
         'Joined technical decisions with cross-functional teams and cleared performance bottlenecks.',
+        'Placed third-party integrations behind an interface so the rest of the domain did not depend on the vendor.',
+        'Changed the MySQL schema with the feature instead of bending queries around an old model.',
+        'Settled the module boundary with product and frontend before implementation started.',
       ],
     },
     {
@@ -58,6 +67,9 @@ export const useExperience = () => {
       highlights: [
         'Contributed to backend architecture and performance work alongside senior developers.',
         'Helped bring features up to a production standard before the end of the internship.',
+        'Implemented assigned backend changes and fixed defects found in review.',
+        'Traced slow paths with senior developers and checked the fix before a feature shipped.',
+        "Worked from the team's review notes so the next change matched the existing codebase.",
       ],
     },
     {
@@ -69,6 +81,9 @@ export const useExperience = () => {
       highlights: [
         'Delivered custom PHP backends for small and mid-sized client projects.',
         'Owned the client conversation as well as the implementation.',
+        'Designed MySQL schemas and the application structure those backends were built on.',
+        'Took each project from agreed requirements through deployment.',
+        'Stayed with the client after launch for fixes and follow-on work.',
       ],
     },
   ];

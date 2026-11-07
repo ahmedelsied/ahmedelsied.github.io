@@ -8,7 +8,7 @@ withDefaults(
     showChrome?: boolean;
     /** Availability status shown in the status pill (home hero only). */
     available?: boolean;
-    /** Localized status label ("Available for new roles" / "Currently booked"). */
+    /** Localized status label shown in the status pill. */
     statusLabel?: string;
   }>(),
   {

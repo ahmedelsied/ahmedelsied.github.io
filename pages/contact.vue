@@ -147,18 +147,6 @@ const secondary = computed(() => [
           <span aria-hidden="true" class="h-px flex-1 self-center bg-border" />
         </div>
         <div class="mt-3 flex flex-wrap items-center gap-2 text-sm">
-          <span class="relative inline-flex size-2">
-            <span
-              aria-hidden="true"
-              class="absolute inline-flex size-full animate-ping rounded-full bg-emerald-500 opacity-60"
-            />
-            <span
-              aria-hidden="true"
-              class="relative inline-flex size-2 rounded-full bg-emerald-500"
-            />
-          </span>
-          <span class="text-foreground">{{ t('hero.status.available') }}</span>
-          <span aria-hidden="true" class="size-0.5 rounded-full bg-muted-foreground/60" />
           <span class="text-muted-foreground">{{ t('contact.availability_value') }}</span>
         </div>
       </div>

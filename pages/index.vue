@@ -70,8 +70,6 @@ const sections = computed(() => [
       :title="t('home.title')"
       :subtitle="t('home.subtitle')"
       :show-chrome="true"
-      :available="true"
-      :status-label="t('hero.status.available')"
     >
       <div
         class="mt-7 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-muted-foreground"
@@ -79,11 +77,6 @@ const sections = computed(() => [
         <span class="inline-flex items-center gap-1.5">
           <Icon name="lucide:map-pin" class="size-3.5" />
           {{ t('home.location') }}
-        </span>
-        <span class="opacity-40">·</span>
-        <span class="inline-flex items-center gap-1.5">
-          <Icon name="lucide:plane" class="size-3.5" />
-          {{ t('home.relocate') }}
         </span>
         <span class="opacity-40">·</span>
         <span class="inline-flex items-center gap-1.5">
