@@ -166,7 +166,11 @@ const description = displayDescription.value;
 const keywords = post.value?.keywords ?? [];
 const publishedAt = post.value?.date;
 const modifiedAt = post.value?.updatedAt ?? post.value?.date;
-const ogImage = post.value?.image ? `${siteUrl}${post.value.image}` : `${siteUrl}/og-image.png`;
+const ogImage = post.value?.image
+  ? /^https?:\/\//.test(post.value.image)
+    ? post.value.image
+    : `${siteUrl}${post.value.image}`
+  : `${siteUrl}/og-image.png`;
 const inLanguage = post.value?.lang ?? 'en';
 
 useSiteSeo({

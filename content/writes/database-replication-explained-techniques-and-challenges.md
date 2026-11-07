@@ -5,6 +5,7 @@ date: 2025-06-27
 updatedAt: 2025-10-04
 lang: en
 readingMinutes: 15
+image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1748338464754/952058f3-df3d-460b-abb1-040d4ea9c706.png"
 keywords:
   - database replication
   - leader and follower

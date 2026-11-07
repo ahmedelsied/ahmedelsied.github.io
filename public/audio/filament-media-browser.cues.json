@@ -1,0 +1,135 @@
+{
+  "sampleRate": 24000,
+  "cues": [
+    {
+      "index": 0,
+      "startSec": 0,
+      "endSec": 22.9
+    },
+    {
+      "index": 1,
+      "startSec": 22.9,
+      "endSec": 37.75
+    },
+    {
+      "index": 2,
+      "startSec": 37.75,
+      "endSec": 39.575
+    },
+    {
+      "index": 3,
+      "startSec": 39.575,
+      "endSec": 45.475
+    },
+    {
+      "index": 4,
+      "startSec": 45.475,
+      "endSec": 60.3
+    },
+    {
+      "index": 5,
+      "startSec": 60.3,
+      "endSec": 83.425
+    },
+    {
+      "index": 6,
+      "startSec": 83.425,
+      "endSec": 89.85
+    },
+    {
+      "index": 7,
+      "startSec": 89.85,
+      "endSec": 91.65
+    },
+    {
+      "index": 8,
+      "startSec": 91.65,
+      "endSec": 118.475
+    },
+    {
+      "index": 9,
+      "startSec": 118.475,
+      "endSec": 121.125
+    },
+    {
+      "index": 10,
+      "startSec": 121.125,
+      "endSec": 147.55
+    },
+    {
+      "index": 11,
+      "startSec": 147.55,
+      "endSec": 149.775
+    },
+    {
+      "index": 12,
+      "startSec": 149.775,
+      "endSec": 163.25
+    },
+    {
+      "index": 13,
+      "startSec": 163.25,
+      "endSec": 188.825
+    },
+    {
+      "index": 14,
+      "startSec": 188.825,
+      "endSec": 190.9
+    },
+    {
+      "index": 15,
+      "startSec": 190.9,
+      "endSec": 206.1
+    },
+    {
+      "index": 16,
+      "startSec": 206.1,
+      "endSec": 226.95
+    },
+    {
+      "index": 17,
+      "startSec": 226.95,
+      "endSec": 237.575
+    },
+    {
+      "index": 18,
+      "startSec": 237.575,
+      "endSec": 240.775
+    },
+    {
+      "index": 19,
+      "startSec": 240.775,
+      "endSec": 263.475
+    },
+    {
+      "index": 20,
+      "startSec": 263.475,
+      "endSec": 284.3
+    },
+    {
+      "index": 21,
+      "startSec": 284.3,
+      "endSec": 295.475
+    },
+    {
+      "index": 22,
+      "startSec": 295.475,
+      "endSec": 297.85
+    },
+    {
+      "index": 23,
+      "startSec": 297.85,
+      "endSec": 313
+    },
+    {
+      "index": 24,
+      "startSec": 313,
+      "endSec": 319.85
+    },
+    {
+      "index": 25,
+      "startSec": 319.85,
+      "endSec": 341.975
+    }
+  ]
+}

@@ -5,5 +5,12 @@
     "blocks": 127,
     "durationSec": 932,
     "generatedAt": "2026-11-07T19:19:54.115Z"
+  },
+  "filament-media-browser": {
+    "hash": "ba1034f234596785",
+    "bytes": 4104288,
+    "blocks": 26,
+    "durationSec": 342,
+    "generatedAt": "2026-11-07T20:49:36.124Z"
   }
 }

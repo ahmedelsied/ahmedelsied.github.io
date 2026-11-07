@@ -39,7 +39,8 @@ export function useSiteSeo(input: SeoInput) {
 
   const path = input.path ?? route.path;
   const url = `${siteUrl}${path}`;
-  const image = `${siteUrl}${input.image ?? '/og-image.png'}`;
+  const rawImage = input.image ?? '/og-image.png';
+  const image = /^https?:\/\//.test(rawImage) ? rawImage : `${siteUrl}${rawImage}`;
   const description = input.description ?? fallbackDesc;
   const alreadyBranded = input.title.includes(siteName) || input.title.includes(localizedSiteName);
   const fullTitle = alreadyBranded ? input.title : `${input.title} | ${localizedSiteName}`;
