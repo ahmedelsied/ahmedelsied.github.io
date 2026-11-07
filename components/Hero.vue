@@ -20,6 +20,8 @@ withDefaults(
   }
 );
 
+const avatarSrc = publicPath('/avatar.jpg');
+
 const socials = [
   { label: 'GitHub', href: 'https://github.com/ahmedelsied', icon: 'lucide:github' },
   {
@@ -36,7 +38,7 @@ const socials = [
   <section class="pt-6 pb-10 text-center sm:pt-10 sm:pb-14">
     <div v-if="showChrome" class="hero-enter mb-6 flex justify-center" style="--hero-delay: 50ms">
       <img
-        src="/avatar.jpg"
+        :src="avatarSrc"
         alt="Ahmed Elsayed"
         width="256"
         height="256"

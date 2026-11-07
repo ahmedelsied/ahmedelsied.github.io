@@ -8,6 +8,8 @@ import { phases as plan3Phases } from './features/plan3/phases';
 import { planTopics as plan3Topics } from './features/plan3/topics';
 
 const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://ahmedelsayed.github.io';
+const baseURL = (process.env.NUXT_APP_BASE_URL || '/').replace(/\/?$/, '/');
+const publicFile = (file: string) => `${baseURL}${file.replace(/^\//, '')}`;
 const siteName = 'Ahmed Elsayed';
 const siteDescription =
   'Senior Backend Engineer. Laravel, PHP, and NestJS for scalable APIs and admin platforms.';
@@ -108,13 +110,13 @@ export default defineNuxtConfig({
     },
   },
   app: {
-    baseURL: process.env.NUXT_APP_BASE_URL || '/',
+    baseURL,
     head: {
       title: siteName,
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
-        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32.png' },
-        { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+        { rel: 'icon', type: 'image/svg+xml', href: publicFile('favicon.svg') },
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: publicFile('favicon-32.png') },
+        { rel: 'apple-touch-icon', sizes: '180x180', href: publicFile('apple-touch-icon.png') },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         { rel: 'dns-prefetch', href: 'https://fonts.googleapis.com' },
@@ -123,8 +125,8 @@ export default defineNuxtConfig({
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@500;600;700&display=swap',
         },
-        { rel: 'preload', as: 'image', href: '/og-image.png', type: 'image/png' },
-        { rel: 'preload', as: 'image', href: '/avatar.jpg', type: 'image/jpeg' },
+        { rel: 'preload', as: 'image', href: publicFile('og-image.png'), type: 'image/png' },
+        { rel: 'preload', as: 'image', href: publicFile('avatar.jpg'), type: 'image/jpeg' },
       ],
       meta: [
         { charset: 'utf-8' },

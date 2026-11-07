@@ -219,10 +219,12 @@ useHead({
   ],
 });
 
+const avatarSrc = publicPath('/avatar.jpg');
+
 const coverFor = (p: { path: string; image?: string }) => {
-  if (p.image) return p.image;
+  if (p.image) return publicPath(p.image);
   const s = p.path.replace(/^\/writes(-ar)?\//, '').replace(/\/$/, '');
-  return `/writes-covers/${s}.png`;
+  return publicPath(`/writes-covers/${s}.png`);
 };
 
 // Public route is always /writes/<slug>; the writesAr collection stores
@@ -319,7 +321,7 @@ const externalPath = (p: { path?: string }) => (p.path ?? '').replace(/^\/writes
       <footer class="mt-16 border-t border-border pt-8">
         <div class="flex items-center gap-4">
           <img
-            src="/avatar.jpg"
+            :src="avatarSrc"
             alt="Ahmed Elsayed"
             width="96"
             height="96"

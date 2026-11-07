@@ -12,6 +12,7 @@ useSiteSeo({
 });
 
 const { roles } = useExperience();
+const avatarSrc = publicPath('/avatar.jpg');
 
 const introParagraphs = computed(() => tmArray('about.intro'));
 const currentlyItems = computed(() => tmArray('about.currently_items'));
@@ -105,7 +106,7 @@ const stack: StackGroup[] = [
       >
         <div class="mx-auto max-w-[10rem] sm:mx-0">
           <img
-            src="/avatar.jpg"
+            :src="avatarSrc"
             alt="Ahmed Elsayed"
             width="384"
             height="384"
