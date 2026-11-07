@@ -72,6 +72,14 @@ export default defineNuxtConfig({
     serverBundle: {
       collections: ['lucide'],
     },
+    // GitHub Pages has no Nitro server, so /api/_nuxt_icon/* 404s.
+    // Ship the icons used in the source with the client instead.
+    clientBundle: {
+      scan: {
+        globInclude: ['**/*.{vue,ts,js,jsx,tsx,md,mdc,mdx,yml,yaml}'],
+      },
+      sizeLimitKb: 512,
+    },
   },
   i18n: {
     defaultLocale,
