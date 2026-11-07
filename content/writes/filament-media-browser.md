@@ -3,6 +3,7 @@ title: "Sharing One File Across Filament Records"
 description: "A file in Filament usually belongs to the record that uploaded it. This package keeps the file in one library and lets many records attach it."
 date: 2026-11-03
 lang: en
+image: "/writes-covers/filament-media-browser.svg"
 keywords:
   - filament
   - laravel
