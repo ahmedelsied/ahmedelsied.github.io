@@ -21,10 +21,14 @@ withDefaults(
 );
 
 const socials = [
-  { label: 'GitHub', href: 'https://github.com/alikhalilll', icon: 'lucide:github' },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/alikhalilll', icon: 'lucide:linkedin' },
-  { label: 'npm', href: 'https://www.npmjs.com/~alikhalilll', icon: 'lucide:package' },
-  { label: 'Email', href: 'mailto:alikhalilll.dev@gmail.com', icon: 'lucide:mail' },
+  { label: 'GitHub', href: 'https://github.com/ahmedelsied', icon: 'lucide:github' },
+  {
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/dev-ahmed-elsied',
+    icon: 'lucide:linkedin',
+  },
+  { label: 'WhatsApp', href: 'https://wa.me/201024404534', icon: 'lucide:message-circle' },
+  { label: 'Email', href: 'mailto:dev.ahmed.elsied@gmail.com', icon: 'lucide:mail' },
 ];
 </script>
 
@@ -33,7 +37,7 @@ const socials = [
     <div v-if="showChrome" class="hero-enter mb-6 flex justify-center" style="--hero-delay: 50ms">
       <img
         src="/avatar.jpg"
-        alt="Ali Khalil"
+        alt="Ahmed Elsayed"
         width="256"
         height="256"
         decoding="async"

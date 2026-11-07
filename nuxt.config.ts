@@ -7,10 +7,10 @@ import { planTopics as plan2Topics } from './features/plan2/topics';
 import { phases as plan3Phases } from './features/plan3/phases';
 import { planTopics as plan3Topics } from './features/plan3/topics';
 
-const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://alikhalilll.github.io';
-const siteName = 'Ali Khalil';
+const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://ahmedelsayed.github.io';
+const siteName = 'Ahmed Elsayed';
 const siteDescription =
-  "Software engineer writing about the parts of building software that don't fit in a README.";
+  'Senior Backend Engineer. Laravel, PHP, and NestJS for scalable APIs and admin platforms.';
 
 // Cloudflare Web Analytics — unlimited, cookieless, no banner required.
 // Set NUXT_PUBLIC_CF_ANALYTICS_TOKEN (see .env.example) to enable tracking.

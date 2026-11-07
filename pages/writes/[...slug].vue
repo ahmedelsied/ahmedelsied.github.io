@@ -328,14 +328,14 @@ const externalPath = (p: { path?: string }) => (p.path ?? '').replace(/^\/writes
         <div class="flex items-center gap-4">
           <img
             src="/avatar.jpg"
-            alt="Ali Khalil"
+            alt="Ahmed Elsayed"
             width="96"
             height="96"
             loading="lazy"
             class="size-11 shrink-0 rounded-full object-cover ring-2 ring-border ring-offset-2 ring-offset-background"
           />
           <div class="min-w-0 flex-1">
-            <p class="text-sm font-semibold leading-tight text-foreground">Ali Khalil</p>
+            <p class="text-sm font-semibold leading-tight text-foreground">Ahmed Elsayed</p>
             <p class="mt-0.5 text-xs leading-tight text-muted-foreground">
               {{ t('meta.home.job_title') }}
             </p>
@@ -343,14 +343,19 @@ const externalPath = (p: { path?: string }) => (p.path ?? '').replace(/^\/writes
           <div class="flex gap-0.5">
             <NuxtLink
               v-for="s in [
-                { href: 'https://github.com/alikhalilll', icon: 'lucide:github', label: 'GitHub' },
+                { href: 'https://github.com/ahmedelsied', icon: 'lucide:github', label: 'GitHub' },
                 {
-                  href: 'https://www.linkedin.com/in/alikhalilll',
+                  href: 'https://www.linkedin.com/in/dev-ahmed-elsied',
                   icon: 'lucide:linkedin',
                   label: 'LinkedIn',
                 },
                 {
-                  href: 'mailto:alikhalilll.dev@gmail.com',
+                  href: 'https://wa.me/201024404534',
+                  icon: 'lucide:message-circle',
+                  label: 'WhatsApp',
+                },
+                {
+                  href: 'mailto:dev.ahmed.elsied@gmail.com',
                   icon: 'lucide:mail',
                   label: 'Email',
                 },

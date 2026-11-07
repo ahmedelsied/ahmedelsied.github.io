@@ -3,14 +3,14 @@ const { t } = useI18n();
 const year = new Date().getFullYear();
 
 const socials = [
-  { label: 'GitHub', href: 'https://github.com/alikhalilll', icon: 'lucide:github' },
+  { label: 'GitHub', href: 'https://github.com/ahmedelsied', icon: 'lucide:github' },
   {
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/alikhalilll',
+    href: 'https://www.linkedin.com/in/dev-ahmed-elsied',
     icon: 'lucide:linkedin',
   },
-  { label: 'npm', href: 'https://www.npmjs.com/~alikhalilll', icon: 'lucide:package' },
-  { label: 'Email', href: 'mailto:alikhalilll.dev@gmail.com', icon: 'lucide:mail' },
+  { label: 'WhatsApp', href: 'https://wa.me/201024404534', icon: 'lucide:message-circle' },
+  { label: 'Email', href: 'mailto:dev.ahmed.elsied@gmail.com', icon: 'lucide:mail' },
 ];
 </script>
 

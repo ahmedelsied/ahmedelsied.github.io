@@ -85,7 +85,7 @@ async function chooseLocale(code: Locales) {
       <Tooltip>
         <TooltipTrigger as-child>
           <NuxtLink
-            to="/ALI_KHALIL_FRONTEND.pdf"
+            to="/Ahmed-Elsayed-Resume.pdf"
             external
             download
             :aria-label="t('nav.download_resume')"
@@ -155,7 +155,7 @@ async function chooseLocale(code: Locales) {
         </button>
 
         <NuxtLink
-          to="/ALI_KHALIL_FRONTEND.pdf"
+          to="/Ahmed-Elsayed-Resume.pdf"
           external
           download
           class="flex items-center gap-3 rounded-lg px-3 py-3 text-sm text-foreground no-underline transition-colors hover:bg-accent"

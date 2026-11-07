@@ -11,20 +11,22 @@ useSiteSeo({
 
 const { work, openSource } = useProjects();
 
-const sections = computed(() => [
-  {
-    key: 'work',
-    heading: t('projects.product_work'),
-    blurb: t('projects.product_work_blurb'),
-    items: work,
-  },
-  {
-    key: 'open-source',
-    heading: t('projects.open_source'),
-    blurb: t('projects.open_source_blurb'),
-    items: openSource,
-  },
-]);
+const sections = computed(() =>
+  [
+    {
+      key: 'work',
+      heading: t('projects.product_work'),
+      blurb: t('projects.product_work_blurb'),
+      items: work,
+    },
+    {
+      key: 'open-source',
+      heading: t('projects.open_source'),
+      blurb: t('projects.open_source_blurb'),
+      items: openSource,
+    },
+  ].filter((section) => section.items.length > 0)
+);
 
 function primaryHref(p: { href?: string; repo?: string }) {
   return p.href ?? p.repo ?? '';
@@ -85,7 +87,7 @@ function primaryHref(p: { href?: string; repo?: string }) {
               <div
                 class="pointer-events-none relative z-10 flex flex-wrap items-center gap-2 font-mono text-[11px] tracking-widest text-muted-foreground uppercase ar:font-sans ar:text-xs ar:tracking-normal ar:normal-case"
               >
-                <span dir="ltr">{{ formatYear(project.year) }}</span>
+                <span v-if="project.year" dir="ltr">{{ formatYear(project.year) }}</span>
                 <template v-if="project.featured">
                   <span aria-hidden="true" class="size-0.5 rounded-full bg-muted-foreground/60" />
                   <span

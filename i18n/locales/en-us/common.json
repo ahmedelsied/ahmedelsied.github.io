@@ -5,7 +5,7 @@
     "projects": "Projects",
     "writing": "Writing",
     "contact": "Contact",
-    "home_aria": "Ali Khalil, home",
+    "home_aria": "Ahmed Elsayed, home",
     "toggle_menu": "Toggle navigation",
     "theme_settings": "Theme settings",
     "language": "Language",
@@ -16,7 +16,7 @@
     "more_options": "More options"
   },
   "footer": {
-    "copyright": "© 2019 to {year} Ali Khalil"
+    "copyright": "© 2019 to {year} Ahmed Elsayed"
   },
   "common": {
     "explore": "Explore",
@@ -34,34 +34,34 @@
     "scroll_to_top": "Back to top"
   },
   "home": {
-    "eyebrow": "Hello, I am Ali",
-    "title": "Senior Frontend Developer and Team Lead.",
-    "subtitle": "I build scalable, high-performance web applications with Vue, Nuxt, and TypeScript, and I lead the teams that deliver them. Six years of experience, with recent focus on real-time, multi-tenant SaaS platforms across the Saudi and Egyptian markets.",
+    "eyebrow": "Hello, I am Ahmed",
+    "title": "Senior Backend Engineer.",
+    "subtitle": "I design scalable, secure backends with Laravel and NestJS. Seven years of experience across e-commerce, admin platforms, and APIs.",
     "location": "Mansoura, Egypt",
-    "relocate": "Open to relocation to Riyadh",
-    "award": "Employee of the Month (twice)",
+    "relocate": "Open to relocation to the UAE and Saudi Arabia",
+    "award": "Apps Up 2022, Huawei",
     "see_work": "See my work",
     "selected_work": "Selected work",
     "what_i_do_well": "What I do well",
     "explore_sections": {
       "about_blurb": "Who I am and how I work.",
-      "projects_blurb": "Products and tools I have delivered.",
-      "writing_blurb": "Notes on frontend engineering and leadership.",
+      "projects_blurb": "Products I have built backends for.",
+      "writing_blurb": "Notes on building software.",
       "contact_blurb": "Say hello. I read every message."
     },
     "strengths": [
-      "Performance work with measurable results. In my most recent role I improved LCP by roughly 40% and reduced CLS by roughly 60% through lazy hydration and code splitting.",
-      "Leading small frontend teams: code review, mentorship, and setting a high bar for accessibility and developer experience.",
-      "Real-time systems on Pusher and WebSockets, including registry-based event layers, multi-tab presence, and message deduplication.",
-      "Client-side security: AES-GCM and PBKDF2 for local data, plus Apple Pay, Google Pay, and Moyasar integrations."
+      "Laravel systems that stay maintainable: Filament admin dashboards, Spatie permissions and activity log, and REST APIs with Sanctum or Passport.",
+      "Relational data. I design MySQL and PostgreSQL schemas and write the queries that admin tools and high-traffic features depend on.",
+      "Backend leadership. At Almasa I led the team behind an internal e-commerce platform, including domain-oriented structure, real-time chat, notifications, and SadadPay.",
+      "Mentorship and delivery. I review code, estimate with the team, and coach junior developers on Laravel, Eloquent, and package integration."
     ],
     "cta": {
       "title": "Working on something interesting?",
-      "body": "Roles, collaborations, or challenging frontend problems. I would be glad to hear about it."
+      "body": "Roles, collaborations, or a backend problem worth talking through. I would be glad to hear about it."
     },
     "about": {
       "title": "About",
-      "body": "Senior Frontend Developer and Team Lead. Six years shipping Vue, Nuxt, and TypeScript at a senior and lead level across real-time SaaS, performance work, and small-team leadership.",
+      "body": "Senior Backend Engineer. Seven years designing systems in PHP, Laravel, and NestJS, with the weight on architecture: domain boundaries, data models, and APIs.",
       "more": "Read the long version"
     },
     "work": {
@@ -85,9 +85,9 @@
           "Do you take on freelance or contract work?"
         ],
         "answers": [
-          "I am based in Mansoura, Egypt, and open to relocating to Riyadh, Saudi Arabia for the right role.",
-          "Vue, Nuxt, and TypeScript on the frontend, and Node.js when a full-stack task requires it. I am also comfortable working with React and Angular.",
-          "Yes. I take shorter engagements and advisory work, and I am open to longer engagements as well. Reach out via the contact page."
+          "I am based in Mansoura, Egypt, and open to relocating to the UAE or Saudi Arabia.",
+          "PHP and Laravel first, with MySQL and PostgreSQL. I also work in NestJS and Node.js, and I am comfortable with JavaScript.",
+          "Yes. I spent two years freelance before moving into full-time roles, and I still take the right engagement. Reach out via the contact page."
         ]
       },
       "work": {
@@ -98,22 +98,22 @@
           "Do you lead, or do you prefer to be an individual contributor?"
         ],
         "answers": [
-          "Small, senior frontend teams that ship SaaS. I have led teams of three to five and worked as the sole frontend lead on a founding team.",
-          "Measure first. Then a combination of lazy hydration, code splitting, image and font strategy, and reducing client-side work. In my most recent role I improved LCP by roughly 40% and reduced CLS by roughly 60%.",
-          "Both. I currently lead a frontend team, and I still ship code every day. I do not believe in leads who cannot deliver."
+          "Product, frontend, and DevOps in the same sprint. I have worked that way at Robusta, and I led the backend team at Almasa.",
+          "Start with the schema and the query. Then indexes, caching, and the API shape the client actually needs. I would rather fix the data path than hide a slow query behind a spinner.",
+          "Both. I currently ship as a backend developer at Robusta, and I have led a backend team and mentored juniors. I still write the code."
         ]
       },
       "process": {
         "label": "Process",
         "questions": [
-          "How do you handle accessibility?",
-          "How do you handle internationalization?",
-          "What is your view on tests?"
+          "How do you design an API?",
+          "What is your view on tests?",
+          "How do you use AI tools in the work?"
         ],
         "answers": [
-          "As a first-class requirement rather than a QA pass. That means WCAG 2.1 checks during code review, keyboard-flow validation, and semantic markup by default.",
-          "As a first-class concern from day one when the product requires it. I have shipped fully bilingual RTL and LTR applications in Arabic and English, including this website.",
-          "Types first, unit tests for tricky logic, and end-to-end tests for critical flows. I do not chase coverage numbers. I focus on confidence in the parts that are most likely to break."
+          "A clear resource model, authentication that matches the client (Sanctum or Passport when the app is Laravel), and validation at the boundary. Third-party integrations stay behind a small interface so the rest of the domain does not depend on them.",
+          "TDD where the behavior is easy to get wrong: permissions, payments, and query-heavy paths. I do not chase a coverage number.",
+          "As a daily tool, not a substitute for design. At Robusta I use Cursor and MCP to move faster on implementation, unit tests, documentation, and debugging."
         ]
       }
     }
@@ -130,7 +130,7 @@
     "input_label": "Search",
     "placeholder_kinds": [
       "Search work",
-      "Try is:project or tag:Nuxt",
+      "Try is:project or tag:Laravel",
       "Try sort:newest",
       "Search articles",
       "Search pages"
@@ -155,46 +155,46 @@
   },
   "meta": {
     "site": {
-      "name": "Ali Khalil",
-      "description": "Senior Frontend Developer and Team Lead. Vue, Nuxt, and TypeScript for real-time, multi-tenant SaaS."
+      "name": "Ahmed Elsayed",
+      "description": "Senior Backend Engineer. Laravel, PHP, and NestJS for scalable APIs and admin platforms."
     },
     "home": {
-      "title": "Ali Khalil, Senior Frontend Developer and Team Lead",
-      "description": "Senior Frontend Developer and Team Lead specializing in Vue, Nuxt, and TypeScript. Six years delivering real-time, multi-tenant SaaS across the Saudi and Egyptian markets.",
-      "job_title": "Senior Frontend Developer and Team Lead"
+      "title": "Ahmed Elsayed, Senior Backend Engineer",
+      "description": "Senior Backend Engineer specializing in Laravel, PHP, and NestJS. Seven years delivering APIs, admin platforms, and e-commerce backends.",
+      "job_title": "Senior Backend Engineer"
     },
     "about": {
-      "title": "About Ali Khalil",
-      "description": "About Ali Khalil. Six years shipping Vue, Nuxt, and TypeScript at a senior and lead level, focused on real-time SaaS, performance work, and small-team leadership."
+      "title": "About Ahmed Elsayed",
+      "description": "About Ahmed Elsayed. Seven years shipping Laravel and PHP backends, including team leadership, payments, and database design."
     },
     "projects": {
-      "title": "Projects, Ali Khalil",
-      "description": "A catalog of projects I have built, including real-time SaaS platforms, AI-driven products, and open-source Nuxt modules."
+      "title": "Projects, Ahmed Elsayed",
+      "description": "Selected products I have built backends for, including Egypt Innovate, Fitexpert, and Elsafwa Resort."
     },
     "blog": {
-      "title": "Writing, Ali Khalil",
-      "description": "Short posts on frontend engineering, Nuxt, TypeScript, performance, and leading small teams."
+      "title": "Writing, Ahmed Elsayed",
+      "description": "Notes on backend engineering, Laravel, APIs, and system design."
     },
     "contact": {
-      "title": "Contact, Ali Khalil",
-      "description": "Reach out about roles, collaborations, or open-source requests. Email, LinkedIn, GitHub, or WhatsApp. I read every message."
+      "title": "Contact, Ahmed Elsayed",
+      "description": "Reach out about roles or collaborations. Email, phone, LinkedIn, or GitHub. I read every message."
     }
   },
   "about": {
     "eyebrow": "About",
-    "title": "Senior Frontend Developer and Team Lead.",
-    "subtitle": "Six years of professional experience with Vue, Nuxt, TypeScript, and real-time systems. Comfortable owning an end-to-end frontend and leading the team that delivers it.",
+    "title": "Senior Backend Engineer.",
+    "subtitle": "Seven years designing backends in PHP, Laravel, and NestJS. The part I care about is the shape of the system: boundaries, data, and APIs that stay clear as the product grows.",
     "intro": [
-      "I am Ali. Over the past six years I have shipped production web applications, most of them SaaS products in the Saudi and Egyptian markets, and increasingly at a lead and senior level. Recently that has meant owning the frontend of multi-tenant platforms with significant real-time requirements, and building the registries and patterns that allow a small team to move quickly without the code turning into a tangle.",
-      "I care about the details that matter over the long run. Clear types. Honest error states. Pages that load quickly enough that no one has to apologize for them. Accessibility treated as a requirement, not an afterthought. Documentation that is honest about what a piece of code does not do.",
-      "I lead by example. I review pull requests carefully, mentor willingly, and hold a firm line on performance and accessibility standards. I have been Employee of the Month twice, which I mention only because it is a fair proxy for work that held up under real production load.",
-      "I am not tied to a single framework. I have shipped production applications in React and Angular. Earlier in my career I delivered enterprise Angular applications with Material UI, and I still reach for React on side projects and client work when it is the right fit."
+      "I am Ahmed. For seven years I have designed backend systems in PHP, Laravel, and NestJS. I care less about a feature landing than about whether the system can still be understood after it does. That means domain boundaries, a data model that matches the business, and an API that other teams can depend on.",
+      "At Almasa I led the backend of an internal e-commerce platform and put a domain-oriented architecture in place, so real-time chat, notifications, and SadadPay could grow as separate parts instead of one tangled module. At Codebase-tech the same question came up across several Laravel and MySQL systems: where the boundary sits, how the schema should change, and which integration belongs behind an interface.",
+      "At Robusta Technology Group I design Laravel applications the same way. Schemas come before screens. Permissions, payments, and third-party APIs are part of the design, not a patch at the end. When a service needs a stricter module boundary, NestJS is the other tool I use.",
+      "I review the design in code review, not only the diff. In 2022 the Us and Them app won Best Arabic App and Best Social Impact at Huawei Apps Up. I am based in Mansoura, available for new roles, and open to relocating to the UAE or Saudi Arabia."
     ],
     "currently": "Currently",
     "currently_items": [
-      "Leading the frontend at eDialogue Corner Society on the Ataa SaaS platform.",
-      "Publishing open-source Nuxt modules under @alikhalilll.",
-      "Open to relocating to Riyadh, Saudi Arabia."
+      "Backend developer at Robusta Technology Group, shipping Laravel applications.",
+      "Available for new roles.",
+      "Open to relocating to the UAE or Saudi Arabia."
     ],
     "experience": "Experience",
     "skills": "Technical skills",
@@ -202,33 +202,33 @@
       "frontend": "Frontend Development",
       "backend": "Backend and APIs",
       "databases": "Databases and Storage",
-      "state": "State Management",
-      "realtime": "Real-Time and Performance",
+      "state": "Architecture",
+      "realtime": "Systems and scale",
       "devops": "Build and DevOps",
       "quality": "Quality and Collaboration"
     },
     "education": "Education",
-    "education_degree": "BSc in Computer Science",
-    "education_meta": "Mansoura University, Egypt. 10/2018 to 10/2022",
-    "education_blurb": "Focus on software engineering, web development, and algorithms. Final-year projects centered on frontend architecture and RESTful API design.",
+    "education_degree": "Bachelor of Computer Technology and Commercial Sciences",
+    "education_meta": "Nile Higher Institute, Mansoura, Egypt. 07/2019 to 07/2023",
+    "education_blurb": "Professional backend work ran alongside the degree, from freelance PHP projects through full-time Laravel roles.",
     "languages_label": "Languages",
-    "languages_value": "Arabic (native). English (advanced, B2 to C1)",
+    "languages_value": "Arabic (native). English (B1)",
     "primary_stack": "Primary stack"
   },
   "projects": {
     "eyebrow": "Projects",
-    "title": "A catalog of projects I have built.",
-    "subtitle": "Real-time SaaS platforms, AI-driven products, and open-source modules. The common thread is solid types, honest documentation, and as little ceremony as the problem allows.",
+    "title": "A catalog of products I have worked on.",
+    "subtitle": "Selected products from client and product work.",
     "product_work": "Product work",
-    "product_work_blurb": "Products I have led or shipped major features for.",
+    "product_work_blurb": "Products I have built or shipped major features for.",
     "open_source": "Open source",
-    "open_source_blurb": "Nuxt modules I maintain. All free, MIT-licensed, and published on npm.",
+    "open_source_blurb": "Packages I maintain. MIT-licensed.",
     "count": "{n} project | {n} projects"
   },
   "writing": {
     "eyebrow": "Writing",
     "title": "Notes, mostly on the edges.",
-    "subtitle": "Short posts on frontend engineering, Nuxt, TypeScript, performance, and leading small teams.",
+    "subtitle": "Notes on building software.",
     "empty": "Nothing published yet. New posts are in progress."
   },
   "blog": {
@@ -272,12 +272,16 @@
   "contact": {
     "eyebrow": "Contact",
     "title": "Let's talk.",
-    "subtitle": "Roles, collaborations, open-source requests, or a friendly note. All are welcome. I read every message.",
+    "subtitle": "Roles, collaborations, or a short note. I read every message.",
     "channels": {
       "email": { "label": "Email", "hint": "Best for anything longer than a short message." },
       "phone": {
-        "label": "Phone or WhatsApp",
-        "hint": "Available on WhatsApp for quick messages."
+        "label": "Phone",
+        "hint": "Calls and SMS."
+      },
+      "whatsapp": {
+        "label": "WhatsApp",
+        "hint": "Best for a quick message."
       },
       "linkedin": { "label": "LinkedIn", "hint": "Work inquiries and professional introductions." },
       "github": { "label": "GitHub", "hint": "Code, issues, and pull requests." },
@@ -288,7 +292,7 @@
     "primary_hint": "I usually reply within a day.",
     "secondary_label": "Or, elsewhere online",
     "availability_label": "Availability",
-    "availability_value": "Based in Mansoura. Open to relocating to Riyadh. UTC+2"
+    "availability_value": "Based in Mansoura. Open to the UAE and Saudi Arabia. UTC+2"
   },
   "error": {
     "label": "Error {code}",

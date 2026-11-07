@@ -8,7 +8,7 @@ useSiteSeo({
   description: t('meta.contact.description'),
 });
 
-const primaryEmail = 'alikhalilll.dev@gmail.com';
+const primaryEmail = 'dev.ahmed.elsied@gmail.com';
 const primaryHref = `mailto:${primaryEmail}`;
 
 // Secondary channels — everything except email, which gets promoted into
@@ -16,27 +16,21 @@ const primaryHref = `mailto:${primaryEmail}`;
 const secondary = computed(() => [
   {
     key: 'phone',
-    value: '+20 106 610 5963',
-    href: 'tel:+201066105963',
+    value: '+20 102 440 4534',
+    href: 'tel:+201024404534',
     icon: 'lucide:phone',
   },
   {
     key: 'linkedin',
-    value: 'linkedin.com/in/alikhalilll',
-    href: 'https://www.linkedin.com/in/alikhalilll',
+    value: 'linkedin.com/in/dev-ahmed-elsied',
+    href: 'https://www.linkedin.com/in/dev-ahmed-elsied',
     icon: 'lucide:linkedin',
   },
   {
     key: 'github',
-    value: '@alikhalilll',
-    href: 'https://github.com/alikhalilll',
+    value: '@ahmedelsied',
+    href: 'https://github.com/ahmedelsied',
     icon: 'lucide:github',
-  },
-  {
-    key: 'npm',
-    value: '~alikhalilll',
-    href: 'https://www.npmjs.com/~alikhalilll',
-    icon: 'lucide:package',
   },
 ]);
 </script>

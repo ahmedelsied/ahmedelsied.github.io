@@ -16,15 +16,14 @@ const { roles } = useExperience();
 const introParagraphs = computed(() => tmArray('about.intro'));
 const currentlyItems = computed(() => tmArray('about.currently_items'));
 
-// Primary stack — the six things that are actually load-bearing for how
-// Ali builds day to day. Everything else in the detailed groups is
-// supporting context.
+// Primary stack — the six things that carry day-to-day backend work.
+// Everything else in the detailed groups is supporting context.
 const primaryStack = [
-  { label: 'Vue.js', note: '2 & 3' },
-  { label: 'Nuxt', note: '3 & 4' },
-  { label: 'TypeScript' },
-  { label: 'Tailwind CSS' },
-  { label: 'Pinia' },
+  { label: 'PHP', note: 'Expert' },
+  { label: 'Laravel', note: 'Expert' },
+  { label: 'MySQL', note: 'Expert' },
+  { label: 'PostgreSQL' },
+  { label: 'NestJS' },
   { label: 'Node.js' },
 ];
 
@@ -32,76 +31,60 @@ type StackGroup = { title: string; items: string[] };
 const stack: StackGroup[] = [
   {
     title: 'about.stack.frontend',
-    items: [
-      'Vue.js (2–3)',
-      'Nuxt (3–4)',
-      'React.js',
-      'Angular',
-      'TypeScript',
-      'JavaScript (ES6+)',
-      'HTML5',
-      'CSS3',
-      'Tailwind CSS',
-      'UnoCSS',
-      'Vuetify',
-      'ShadCN',
-      'Naive UI',
-      'SCSS / Sass',
-      'Pug.js',
-    ],
+    items: ['JavaScript', 'HTML & CSS', 'Vue.js'],
   },
   {
     title: 'about.stack.backend',
     items: [
-      'Node.js',
-      'Express.js',
+      'PHP',
+      'Laravel',
       'NestJS',
-      'MongoDB (Mongoose)',
-      'RESTful APIs',
-      'JWT Authentication',
-      'RBAC',
-      'OAuth',
-      'Stripe & PayPal Integration',
-      'Axios',
-      'Input Validation',
-      'Rate Limiting',
-      'bcrypt.js',
+      'Node.js',
+      'REST APIs',
+      'Laravel Sanctum',
+      'Laravel Passport',
+      'Filament',
+      'Spatie',
     ],
   },
   {
     title: 'about.stack.databases',
-    items: ['MongoDB', 'Mongoose ODM', 'IndexedDB', 'LocalStorage / SessionStorage'],
+    items: ['MySQL', 'PostgreSQL', 'MongoDB'],
   },
-  { title: 'about.stack.state', items: ['Pinia', 'Vuex', 'Redux'] },
+  {
+    title: 'about.stack.state',
+    items: [
+      'SOLID',
+      'Domain-driven design',
+      'Design patterns',
+      'Microservices',
+      'Event-driven architecture',
+    ],
+  },
   {
     title: 'about.stack.realtime',
     items: [
-      'Pusher (WebSockets)',
-      'IndexedDB',
-      'AES-GCM Encryption',
-      'PBKDF2',
-      'Virtualized Rendering',
-      'Lazy Hydration',
-      'Code Splitting',
-      'Caching & Compression (Brotli / Gzip)',
-      'Critical CSS',
+      'Cache strategies',
+      'Database replication',
+      'Distributed systems',
+      'Horizontal and vertical scaling',
+      'System design',
+      'System observability',
     ],
   },
   {
     title: 'about.stack.devops',
-    items: ['Vite', 'Webpack', 'Gulp.js', 'GitLab CI/CD', 'Docker', 'Brotli / Gzip Compression'],
+    items: ['Containerization', 'Laravel Forge', 'Laravel Envoyer'],
   },
   {
     title: 'about.stack.quality',
     items: [
-      'ESLint',
-      'Prettier',
-      'Unit & E2E Testing',
-      'Code Review',
+      'TDD',
+      'Code review',
       'Mentorship',
-      'Team Leadership',
-      'Cross-functional Collaboration',
-      'Accessibility (WCAG 2.1)',
+      'Sprint planning',
+      'Cursor',
+      'Model Context Protocol',
     ],
   },
 ];
@@ -118,7 +101,7 @@ const stack: StackGroup[] = [
         <div class="mx-auto max-w-[10rem] sm:mx-0">
           <img
             src="/avatar.jpg"
-            alt="Ali Khalil"
+            alt="Ahmed Elsayed"
             width="384"
             height="384"
             decoding="async"

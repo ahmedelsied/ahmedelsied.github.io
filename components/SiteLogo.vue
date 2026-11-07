@@ -1,7 +1,7 @@
 <script setup lang="ts">
 withDefaults(defineProps<{ size?: number; title?: string }>(), {
   size: 32,
-  title: 'Ali Khalil',
+  title: 'Ahmed Elsayed',
 });
 </script>
 
@@ -26,7 +26,7 @@ withDefaults(defineProps<{ size?: number; title?: string }>(), {
       text-anchor="middle"
       class="site-logo-text"
     >
-      AK
+      AE
     </text>
   </svg>
 </template>

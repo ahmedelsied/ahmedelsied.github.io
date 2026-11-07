@@ -34,8 +34,7 @@ jobs:
         run: pnpm generate
         env:
           NUXT_APP_BASE_URL: /
-          NUXT_PUBLIC_SITE_URL: https://alikhalilll.github.io
-          NUXT_PUBLIC_CF_ANALYTICS_TOKEN: 9b74107355e248b7887bf7ef69925180
+          NUXT_PUBLIC_SITE_URL: https://ahmedelsayed.github.io
 
       - uses: actions/configure-pages@v5
 
