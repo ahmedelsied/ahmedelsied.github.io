@@ -32,7 +32,7 @@ type StackGroup = { title: string; items: string[] };
 const stack: StackGroup[] = [
   {
     title: 'about.stack.frontend',
-    items: ['JavaScript', 'HTML & CSS', 'Vue.js'],
+    items: ['JavaScript', 'jQuery', 'HTML & CSS', 'Vue.js'],
   },
   {
     title: 'about.stack.backend',
@@ -42,6 +42,7 @@ const stack: StackGroup[] = [
       'NestJS',
       'Node.js',
       'REST APIs',
+      'OWASP Top 10',
       'Laravel Sanctum',
       'Laravel Passport',
       'Filament',
@@ -50,7 +51,7 @@ const stack: StackGroup[] = [
   },
   {
     title: 'about.stack.databases',
-    items: ['MySQL', 'PostgreSQL', 'MongoDB'],
+    items: ['MySQL', 'PostgreSQL', 'MongoDB', 'Redis'],
   },
   {
     title: 'about.stack.state',
@@ -73,6 +74,7 @@ const stack: StackGroup[] = [
       'Cache strategies',
       'Database replication',
       'Distributed systems',
+      'Message queues',
       'Horizontal and vertical scaling',
       'System design',
       'System observability',

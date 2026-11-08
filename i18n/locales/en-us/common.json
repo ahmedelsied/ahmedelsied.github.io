@@ -49,14 +49,15 @@
       "contact_blurb": "Say hello. I read every message."
     },
     "strengths": [
-      "Laravel systems that stay maintainable: Filament admin dashboards, Spatie permissions and activity log, and REST APIs with Sanctum or Passport.",
-      "Relational data. I design MySQL and PostgreSQL schemas and write the queries that admin tools and high-traffic features depend on.",
-      "Backend leadership. At Almasa I led the team behind an internal e-commerce platform, including domain-oriented structure, real-time chat, notifications, and SadadPay.",
-      "Mentorship and delivery. I review code, estimate with the team, and coach junior developers on Laravel, Eloquent, and package integration."
+      "Technical ownership. I take a backend from the design decision through implementation, review, and production, and I stay accountable for it after it ships.",
+      "System design. I make the architecture calls: domain boundaries, data models, APIs, and the trade-offs those choices commit the product to.",
+      "Backend engineering. I build and maintain the services the product runs on, from implementation through production.",
+      "Database design and scaling. I shape how data is stored and queried so the system keeps up as traffic and features grow.",
+      "CI/CD. I automate the path from a change to a deploy, with checks in place before it goes out."
     ],
     "cta": {
       "title": "Working on something interesting?",
-      "body": "Roles, collaborations, or a backend problem worth talking through. I would be glad to hear about it."
+      "body": "A role, a collaboration, or a backend problem that still needs a design decision. Tell me what you are building."
     },
     "about": {
       "title": "About",
@@ -97,9 +98,9 @@
           "Do you lead, or do you prefer to be an individual contributor?"
         ],
         "answers": [
-          "Product, frontend, and DevOps in the same sprint. I have worked that way at Robusta, and I led the backend team at Almasa.",
-          "Start with the schema and the query. Then indexes, caching, and the API shape the client actually needs. I would rather fix the data path than hide a slow query behind a spinner.",
-          "Both. I currently work as a Software Engineer at Robusta, and I have led a backend team and mentored juniors. I still write the code."
+          "Teams where product, frontend, and DevOps are in the decision, not handed a finished backend. The constraint has to be in the room while the scope can still move: what the user needs, what the client can render, and what production can actually run. That is how I work at Robusta, and how I led the backend team at Almasa.",
+          "I measure before I change anything. The cost is usually in the data path: the schema, the query, or an API that forces too much work onto the client. Indexes and cache come after that shape is right. I would rather fix the path than cache a bad query or hide it behind a spinner.",
+          "Both, and I do not treat them as different jobs. Leading is the technical decision, the scope, and the review, and it still includes writing the code that is easy to get wrong. I work that way now at Robusta. At Almasa I led a three-developer backend team the same way, and I still mentor."
         ]
       },
       "process": {
@@ -110,9 +111,9 @@
           "How do you use AI tools in the work?"
         ],
         "answers": [
-          "A clear resource model, authentication that matches the client (Sanctum or Passport when the app is Laravel), and validation at the boundary. Third-party integrations stay behind a small interface so the rest of the domain does not depend on them.",
+          "I design the contract before the routes: who calls it, which operations are allowed, what they can rely on, and how it fails. The resource model follows the domain, not the tables. Authentication and validation sit at the boundary, and anything outside the system stays behind an interface so the domain does not inherit a vendor's shape. A smaller API that can change without breaking clients beats a wide one that mirrors the database.",
           "TDD where the behavior is easy to get wrong: permissions, payments, and query-heavy paths. I do not chase a coverage number.",
-          "As a daily tool, not a substitute for design. At Robusta I use Cursor and MCP to move faster on implementation, unit tests, documentation, and debugging."
+          "I use them daily for implementation, tests, documentation, and debugging. They do not make the design decision, and I do not ship what I cannot explain. The architecture and the review stay mine."
         ]
       }
     }
@@ -189,9 +190,7 @@
       "I hold the work to that standard. A system should remain sound after delivery, with a structure clear enough for the next change to follow. The people responsible for it should know the scope, the progress, and the risk, and they should be able to continue without reconstructing decisions that were already made."
     ],
     "currently": "Currently",
-    "currently_items": [
-      "Software Engineer at Robusta Technology Group."
-    ],
+    "currently_items": ["Software Engineer at Robusta Technology Group."],
     "experience": "Experience",
     "skills": "Technical skills",
     "stack": {
